@@ -6,7 +6,8 @@
 #define TAM_MAX_MSG 1000
 
 int main() {
-    char nome[TAM_MAX_NOME], msg[TAM_MAX_MSG];
+    char *nome = (char *) malloc(TAM_MAX_NOME * sizeof(char));
+    char *msg = (char *) malloc(TAM_MAX_MSG * sizeof(char));
     FILE *fptr;
     int opcao = 1;
 
@@ -21,23 +22,25 @@ int main() {
         else {
             rewind(fptr);
             // Lê o nome do autor e a mensagem do arquivo
-            char linha[TAM_MAX_NOME + TAM_MAX_MSG + 4];
-                while (fgets(linha, sizeof(linha), fptr) != NULL) {
-                    printf("%s", linha);
-                }
+            printf("\nAvisos:\n");
+            char *linha = (char *) malloc((TAM_MAX_NOME + TAM_MAX_MSG + 4) * sizeof(char));
+            while (fgets(linha, TAM_MAX_NOME + TAM_MAX_MSG + 4, fptr) != NULL) {
+                printf("\n%s", linha);
+            }
+            free(linha);
         }
     }
     
     while (opcao != 0) {
-        printf("Digite 1 para ADICIONAR ou 0 para SAIR:\n");
+        printf("\nDigite 1 para ADICIONAR ou 0 para SAIR:\n");
         scanf("%d", &opcao);
         getchar(); // Limpa o buffer do teclado
 
         if (opcao == 1) {
-            printf("Digite o nome do autor:\n");
+            printf("\nDigite o nome do autor:\n");
             fgets(nome, TAM_MAX_NOME, stdin);
 
-            printf("Digite a mensagem:\n");
+            printf("\nDigite a mensagem:\n");
             fgets(msg, TAM_MAX_MSG, stdin);
 
             if (strlen(msg) > 1) {
@@ -48,21 +51,25 @@ int main() {
 
                 // Escreve a mensagem no final do arquivo
                 fprintf(fptr, "%s - %s\n", nome, msg);
-                printf("Mensagem adicionada com sucesso!\n");
+                printf("\nMensagem adicionada com sucesso!\n");
 
                 // lê todo o conteúdo do arquivo e imprime na tela
                 rewind(fptr);
-                char linha[TAM_MAX_NOME + TAM_MAX_MSG + 4];
-                while (fgets(linha, sizeof(linha), fptr) != NULL) {
-                    printf("%s", linha);
+                printf("\nAvisos:\n");
+                char *linha = (char *) malloc((TAM_MAX_NOME + TAM_MAX_MSG + 4) * sizeof(char));
+                while (fgets(linha, TAM_MAX_NOME + TAM_MAX_MSG + 4, fptr) != NULL) {
+                    printf("\n%s", linha);
                 }
+                free(linha);
             }
         }
-        else{
-                printf("Comando desconhecido!\n");
+        else if(opcao != 0 && opcao != 1){
+                printf("\nComando desconhecido!\n");
         }
     }    
 
     fclose(fptr);
+    free(nome);
+    free(msg);
     return 0;
 }

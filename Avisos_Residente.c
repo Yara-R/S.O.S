@@ -21,10 +21,11 @@ int main() {
             rewind(fptr);
             // Lê o nome do autor e a mensagem do arquivo
             printf("\nAvisos:\n");
-            char linha[TAM_MAX_NOME + TAM_MAX_MSG + 4];
-                while (fgets(linha, sizeof(linha), fptr) != NULL) {
-                    printf("\n%s", linha);
-                }
+            char* linha = (char*) malloc((TAM_MAX_NOME + TAM_MAX_MSG + 4) * sizeof(char));
+            while (fgets(linha, TAM_MAX_NOME + TAM_MAX_MSG + 4, fptr) != NULL) {
+                printf("\n%s", linha);
+            }
+            free(linha);
         }
     }
     
