@@ -12,6 +12,12 @@ Este é um aplicativo web de código aberto cujo propósito é facilitar a gest�
 
 ### Instalação
 
+Faça o download do Git no site oficial (ou baixe o gitDesktop):
+
+```
+https://git-scm.com/downloads
+```
+
 Clone o repositório para sua máquina local:
 
 ```
