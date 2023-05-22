@@ -3,14 +3,14 @@
 ## Linguagem utilizada
 <img src="https://img.shields.io/badge/-D3D3D3?logo=c&logoColor=0000FF" />
 
-## Grupo: Yara, Canel, Mathews Ivo Tavares, JP1, JP2, MARIANA?, RAUL, CAIO, JULIA?, PEDRO TEMPORAL
+## Grupo: Yara Rodrigues Inácio, Matheus Canel, Mathews Ivo Tavares, João Pedro Araujo, João Pedro Dornelas , Mariana Correia, Raul Luiz, Caio Vila Nova,Julia Valença, Pedro Temporal
 ### Board do Trello: https://trello.com/b/M545WnEZ/sos-histórias
-### Sites da Equipe: https://sites.google.com/d/10FgHobstlIKFmIrcKJgfXUbCQYTXH83t/p/1i6drmDyu7KW9PFrKltfybyjo4-PASgsX/edit
+### Site da Equipe: https://sites.google.com/d/10FgHobstlIKFmIrcKJgfXUbCQYTXH83t/p/1i6drmDyu7KW9PFrKltfybyjo4-PASgsX/edit
 
 ## Descrição
 Este é um aplicativo web de código aberto cujo propósito é facilitar a gestão de médicos residentes e preceptores, por parte de uma coordenação, e manter controle de frequência dos mesmos.
 
-### Instalação
+## Instalação
 
 Faça o download do Git no site oficial (ou baixe o gitDesktop):
 
