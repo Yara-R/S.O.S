@@ -45,15 +45,15 @@ int escolha_residente(){
     switch (escolha)
     {
     case 0:
-        return resultados_clinica;
+        return resultados_clinica();
         break;
     
     case 1:
-        return resultados_pratica;
+        return resultados_pratica();
         break;
 
     case 2:
-        return resultados_diagnostica;
+        return resultados_diagnostica();
         break;
 
     default:
