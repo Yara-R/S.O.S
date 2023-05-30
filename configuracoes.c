@@ -15,7 +15,7 @@ int main() {
         case AJUDA: {
             FILE *faqFile = fopen("faq.txt", "r");
             if (faqFile == NULL) {
-                printf("Erro ao abrir o arquivo faq.txt\n");
+                printf("Erro ao abrir AJUDA\n");
                 return 1;
             }
 
@@ -38,7 +38,7 @@ int main() {
 
             FILE *mensagemFile = fopen("mensagem.txt", "a");
             if (mensagemFile == NULL) {
-                printf("Erro ao criar o arquivo mensagem.txt\n");
+                printf("Erro ao enviar mensagem\n");
                 return 1;
             }
 
