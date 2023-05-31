@@ -3,8 +3,8 @@
 #include <string.h>
 
 int main(){
-    int tipo, r1, r2;
-    char senha[100], senha2[100], cpf[12], cpf2[12];
+    int tipo, choice, r1, r2;
+    char senha[100], senha2[100], senha3[100], cpf[12], cpf2[12], cpf3[12];
     FILE *residentes, *preceptores;
 
     printf("Selecione qual seu tipo de usuario:\n");
@@ -33,7 +33,8 @@ int main(){
         }
         
         fclose(residentes);
-    }else{
+
+    }else if (tipo==2){
       printf("Bem vindo a pagina de preceptores!\n");
         printf("CPF: ");
         scanf("%s", cpf);
@@ -56,6 +57,31 @@ int main(){
         
         fclose(preceptores);
       
+    }else{
+        printf("Bem vindo a pagina de preceptores!\n");
+        printf("Você deseja cadastrar um aluno ou um residente?\n");
+        scanf("%d", choice);
+
+        if(choice==1){
+            printf("Digite o CPF do aluno:\n");
+            scanf("%s", cpf3);
+            printf("Digite a senha do aluno:\n");
+            scanf("%s", senha3);
+            residentes = fopen("residentes.txt", "a");
+            fputs(cpf3, residentes);
+            fputs(senha3, residentes);
+            
+
+        }else{
+            printf("Digite o CPF do preceptor:\n");
+            scanf("%s", cpf3);
+            printf("Digite a senha do preceptor:\n");
+            scanf("%s", senha3);
+            preceptores = fopen("preceptores.txt", "a");
+            fputs(cpf3, preceptores);
+            fputs(senha3, preceptores);
+        }
+       
     }
 
     return 0;
