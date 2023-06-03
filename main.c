@@ -1,10 +1,16 @@
 #include <stdio.h>
-#include "avisos.h"
-#include "escolha_ficha_avaliativa.h"
+#include <stdlib.h>
+#include "login.h"
+#include "avisos_residentes.h"
 
-int main(){
-    preceptor;
-    residente;
-    escolha_ficha;
+
+int main()
+{
+    login_app();
+
+    //aviso_residente();
+
+
     return 0;
+
 }
