@@ -1,0 +1,12 @@
+# ninja log v5
+223	377	7074772200709873	teste.exe	400e64dea6ec6725
+3	221	7074772199152673	CMakeFiles/teste.dir/login.c.obj	47605bc4478c333
+9	137	7074708826803637	CMakeFiles/teste.dir/main.c.obj	378440a3dd01395b
+1	190	7074783652640517	build.ninja	35b65cabe0727eef
+10	126	7074559330691798	CMakeFiles/teste.dir/avisos_residentes.c.obj	4cdc7a4d7154facf
+7	103	7074631173232191	CMakeFiles/teste.dir/avisos_preceptores.c.obj	df8bcba679fc5a7d
+14	220	7074772199152673	CMakeFiles/teste.dir/avaliacao_residente.c.obj	83f550b776ba9b1c
+9	222	7074772199152673	CMakeFiles/teste.dir/avaliacao_preceptor.c.obj	524baf7925b483ec
+8	109	7074786767335723	CMakeFiles/teste.dir/presenca.c.obj	cd17d4ed2c4e042c
+4	119	7074786767436001	CMakeFiles/teste.dir/login.c.obj	47605bc4478c333
+119	282	7074786769025901	teste.exe	7dd636b24b1827cf

@@ -1,0 +1,1 @@
+void aviso_residente();

@@ -1,0 +1,1 @@
+void escolha_ficha();
