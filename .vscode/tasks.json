@@ -10,7 +10,9 @@
                 "${workspaceFolder}/*.c",
                 "${workspaceFolder}/*.h",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "${workspaceFolder}.c",
+                "${workspaceFolder}.h"
             ],
             "options": {
                 "cwd": "${fileDirname}"

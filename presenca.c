@@ -44,10 +44,12 @@ void registrar_frequencia() {
         switch (acaoSelecionada) {
             case ENTRADA:
                 fprintf(arquivo, "Entrada: %s\n", dataHora);
+                fprintf(arquivo, "Latitude = -21° 09' 43.82'' S;\nLongitude = -47° 51' 11.04'' W\n\n");
                 printf("Registro de entrada efetuado com sucesso.\n");
                 break;
             case SAIDA:
                 fprintf(arquivo, "Saida: %s\n", dataHora);
+                fprintf(arquivo, "Latitude = -21° 09' 43.82'' S;\nLongitude = -47° 51' 11.04'' W\n\n");
                 printf("Registro de saida efetuado com sucesso.\n");
                 break;
         }
