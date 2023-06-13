@@ -8,7 +8,7 @@
 ### Site da Equipe: https://sites.google.com/d/10FgHobstlIKFmIrcKJgfXUbCQYTXH83t/p/1i6drmDyu7KW9PFrKltfybyjo4-PASgsX/edit
 
 ## Descrição
-Este é um aplicativo web de código aberto cujo propósito é facilitar a gestão de médicos residentes e preceptores, por parte de uma coordenação, e manter controle de frequência dos mesmos.
+Este é um aplicativo web de código aberto cujo propósito é facilitar a auto-gestão de médicos residentes e preceptores, para eventual controle de uma coordenação.
 
 ## Instalação
 
