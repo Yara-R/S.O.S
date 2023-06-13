@@ -12,17 +12,28 @@ Este é um aplicativo web de código aberto cujo propósito é facilitar a gest�
 
 ## Instalação
 
-Faça o download do Git no site oficial (ou baixe o gitDesktop):
-
-```
-https://git-scm.com/downloads
-```
-
-Clone o repositório para sua máquina local:
+Clone o repositório para sua máquina local e rode o exe do programa:
 
 ```
 git clone https://github.com/Yara-R/S.O.S.git
 ```
 
+## Obs
+
+No decorrer do desenvolvimento se percebeu que, em algumas máquinas, a variar compiladores e Ides, o programa não compilava. Por exemplo, no Vscode, aparentemente há um problema de compilação, onde é necessário
+fazer mudanças no arquivo taskJson, dentro da pasta do Vscode. Assim, se optou por prioritariamente utilizar o Clion como Ide, onde a compilação ocorria de maneira adequada. Em suma, alguns membros do time 
+conseguiram fazer compilar no Vscode e outros não, então, prioritariamente, escolher o cLion para testes.
+
+## Uso
+
+```
+1 - Selecione a opção de login desejada.
+2 - Tanto para residente quanto para preceptor, o login disponibilizado para testes é, como [CPF] 11530010030 e [Senha] 12332199 
+3 - Navegue a vontade pelas diversas funcionalidades.
+4 - Para verificar o devido funcionamento e outputs esperados, visualizar os arquivos .txt
+
+Nota - Se a Ide escolhida for o Clion, os arquivos .txt alterados estarão localizados na pasta cmake-build-debug, caso contrário, serão os .txt soltos no folder do projeto.
+
+```
 
 
